@@ -1,6 +1,5 @@
 #include<stdio.h>
 
-
 struct student
 {
     int roll;
@@ -10,9 +9,9 @@ struct student
 
 int main()
 {
-    struct student s[10];
+    struct student s[11];
     
-    for(int i=0 ; i<5 ;i++)
+    for(int i=0 ; i<10 ;i++)
     {
         
         printf("Enter roll no. of student %d :",i+1);
@@ -27,12 +26,7 @@ int main()
         //strcpy(s[i].name , s1[i]);
     }
 
-    // for(int i=0 ; i<5 ; i++)
-    // {
-        
-    // }
-
-    for(int i=0 ; i<5 ;i++)
+    for(int i=0 ; i<10 ;i++)
     {
         printf("%d\t",s[i].roll);
         printf("%s\t" , s[i].name);
